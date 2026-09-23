@@ -14,7 +14,7 @@
 기초 수식  
 - sigmoid : $sig = \frac {1}{1+e
 ^{-(ax+b)}}$
-- cost : $cost=-(y_ilog\hat y+(1- y_i)log(1-\hat y))$
+- cost : $cost=-\frac {1}{n} \Sigma (y_ilog\hat y+(1- y_i)log(1-\hat y))$
 
 ## 기타 수식
 - 상관계수 r : $r=\frac {Cov(x,y)}{\sigma _x \sigma _y}$
