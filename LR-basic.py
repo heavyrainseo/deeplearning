@@ -5,13 +5,14 @@ x = np.array([2, 4, 6, 8], dtype=float)
 y = np.array([81, 93, 91, 97], dtype=float)
 
 # 초기값과 학습률
-a = np.random()
-b = np.random()
+a = np.random.rand()
+b = np.random.rand()
 
 learning_rate = 0.01
-epochs = 10000
+epochs = 5000
 
 n = len(x)
+mses = []
 
 for epoch in range(epochs):
     prediction = a * x + b
@@ -25,6 +26,7 @@ for epoch in range(epochs):
     # 경사하강법으로 a와 b 갱신
     a -= learning_rate * gradient_a
     b -= learning_rate * gradient_b
+    mses.append((error**2).mean())
 
     if (epoch + 1) % 1000 == 0:
         print(f"epoch: {epoch + 1:5d}, cost: {cost:.6f}, a: {a:.6f}, b: {b:.6f}")
@@ -34,3 +36,6 @@ print(f"직선의 방정식: y = {a:.6f}x + {b:.6f}")
 print(f"최종 비용(MSE): {np.mean((y - (a * x + b))**2):.6f}")
 print("예측값:", a * x + b)
 
+import matplotlib.pyplot as plt
+plt.plot(mses)
+plt.show()
