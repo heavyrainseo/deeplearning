@@ -1,13 +1,13 @@
 import numpy as np
 
-
 # 입력 데이터와 목표값
 x = np.array([2, 4, 6, 8], dtype=float)
 y = np.array([81, 93, 91, 97], dtype=float)
 
 # 초기값과 학습률
-a = 0.0
-b = 0.0
+a = np.random()
+b = np.random()
+
 learning_rate = 0.01
 epochs = 10000
 
@@ -33,3 +33,4 @@ print("\n최종 결과")
 print(f"직선의 방정식: y = {a:.6f}x + {b:.6f}")
 print(f"최종 비용(MSE): {np.mean((y - (a * x + b))**2):.6f}")
 print("예측값:", a * x + b)
+
