@@ -39,3 +39,4 @@ print("예측값:", a * x + b)
 import matplotlib.pyplot as plt
 plt.plot(mses)
 plt.savefig('LR-basic.png')
+plt.show()
