@@ -18,4 +18,4 @@
 
 ## 기타 수식
 - 상관계수 r : $r=\frac {Cov(x,y)}{\sigma _x \sigma _y}$
-- 상관비(eta) : $\eta = \sqrt {SS _{between}/SS_{total}} = \sqrt {\Sigma _k n_k(\bar y_k-\bar y)^2 / \Sigma _i (y_i-\bar y)^2}, \ 0 \le \eta \le 1$
+- 상관비(eta) : $\eta = \sqrt {SS_{between}/SS_{total}} = \sqrt {\Sigma _k n_k(\bar y_k-\bar y)^2 / \Sigma _i (y_i-\bar y)^2}, \ 0 \le \eta \le 1$
