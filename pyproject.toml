@@ -8,13 +8,16 @@ authors = [
 ]
 requires-python = ">=3.12"
 dependencies = [
+    "distutils",
     "ipykernel>=7.3.0",
+    "koreanize-matplotlib>=0.1.1",
     "matplotlib>=3.11.2",
     "numpy>=2.5.3",
     "pandas>=3.0.6",
     "scikit-learn>=1.9.1",
     "scipy>=1.18.1",
     "seaborn>=0.13.2",
+    "setuptools>=84.0.0",
     "tensorflow>=2.22.0rc0",
 ]
 
