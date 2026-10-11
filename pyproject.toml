@@ -6,9 +6,8 @@ readme = "README.md"
 authors = [
     { name = "Prof. Seo", email = "hvyrain@ysc.ac.kr" }
 ]
-requires-python = ">=3.12"
+requires-python = ">=3.12,<3.13"
 dependencies = [
-    "distutils",
     "ipykernel>=7.3.0",
     "koreanize-matplotlib>=0.1.1",
     "matplotlib>=3.11.2",
