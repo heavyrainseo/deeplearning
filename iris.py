@@ -32,7 +32,7 @@ history = model.fit(x, y, callbacks=[esc],
 print(f'accuracy : {model.evaluate(x,y)}')
 
 plt.figure(figsize=(10,5))
-plt.title('iris learning result')
+plt.suptitle('iris learning result')
 ax = plt.subplot(1,2,1)
 ax.plot(history.history['loss'], label='loss')
 ax.plot(history.history['val_loss'], label='val_loss')
